@@ -1,5 +1,6 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
+import { Link } from "react-router-dom";
 
 export function Welcome() {
   return (
@@ -19,27 +20,105 @@ export function Welcome() {
             />
           </div>
         </header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              What&apos;s next?
+        <div className="max-w-[600px] w-full space-y-6 px-4">
+          <h1 className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-100">
+            Learn React Router Framework Mode
+          </h1>
+          <p className="text-lg text-gray-700 dark:text-gray-200">
+            Welcome to this guide on how to use the powerful React Router Framework Mode!
+          </p>
+          <section className="space-y-6">
+            <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+              What is Framework Mode?
+            </h2>
+            <p className="text-gray-700 dark:text-gray-200">
+              Framework Mode is an advanced setup for using React Router, combining both
+              static and dynamic rendering strategies. It leverages features like intelligent
+              code splitting, typesafe hrefs, and typesafe Route Module API. 
+              It supports various rendering strategies like SPA, SSR, and static rendering.
             </p>
-            <ul>
-              {resources.map(({ href, text, icon }) => (
-                <li key={href}>
-                  <a
-                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {icon}
-                    {text}
-                  </a>
-                </li>
-              ))}
+
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+              Features of Framework Mode:
+            </h3>
+            <ul className="list-disc pl-6 text-gray-700 dark:text-gray-200">
+              <li>Typesafe Hrefs</li>
+              <li>Typesafe Route Module API</li>
+              <li>Intelligent Code Splitting</li>
+              <li>SPA, SSR, and Static Rendering Strategies</li>
+              <li>Fully Typed Routes and Navigation</li>
+              <li>Seamless Client and Server Integration</li>
             </ul>
-          </nav>
+
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+              Why Use React Router Framework Mode?
+            </h3>
+            <p className="text-gray-700 dark:text-gray-200">
+              Framework Mode simplifies development by bringing the full power of React Router
+              into your Vite-powered React app. It allows you to write code that works seamlessly
+              across different rendering strategies, making it easy to build scalable and high-performance
+              applications. You get automatic handling of route prefetching, server-side rendering (SSR),
+              and static site generation (SSG) with minimal configuration.
+            </p>
+          </section>
+
+          <section className="space-y-6">
+            <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+              Example: Setting Up Routes with Framework Mode
+            </h2>
+            <p className="text-gray-700 dark:text-gray-200">
+              With Framework Mode, defining routes becomes a breeze. Here’s an example of how to define
+              a simple route setup:
+            </p>
+            <pre className="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg">
+              <code className="text-sm text-gray-900 dark:text-gray-100">
+                {`
+import { createRoutesFromElements, Route } from 'react-router';
+
+export function Routes() {
+  return createRoutesFromElements(
+    <Route path="/" element={<Home />} />
+  );
+}
+
+function Home() {
+  return <h2>Welcome to React Router Framework Mode</h2>;
+}
+              `}
+              </code>
+            </pre>
+            <p className="text-gray-700 dark:text-gray-200">
+              As you can see, routes are defined using the <code>createRoutesFromElements</code> utility,
+              which is part of React Router's new API in Framework Mode.
+            </p>
+          </section>
+
+          <section className="space-y-6">
+            <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+              Learn More and Join the Community
+            </h2>
+            <p className="text-gray-700 dark:text-gray-200">
+              To dive deeper into the capabilities of React Router, check out the resources below and
+              join the growing community of developers.
+            </p>
+            <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
+              <ul>
+                {resources.map(({ href, text, icon }) => (
+                  <li key={href}>
+                    <a
+                      className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {icon}
+                      {text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </section>
         </div>
       </div>
     </main>
