@@ -22,10 +22,10 @@ export function Welcome() {
         </header>
         <div className="max-w-[600px] w-full space-y-6 px-4">
           <h1 className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-100">
-            Learn React Router Framework Mode
+            Learn React Router FRAMEWORK Mode
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-200">
-            Welcome to this guide on how to use the powerful React Router Framework Mode!
+            Welcome to this guide on how to use the powerful React Router FRAMEWORK Mode!
           </p>
           <section className="space-y-6">
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
