@@ -39,9 +39,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {/* Open Graph Meta tags for social sharing */}
         <meta property="og:title" content="React Router Blog" />
         <meta property="og:description" content="Learn about React Router Framework Mode for building modern web apps" />
-        <meta property="og:image" content="https://react-router.vercel.app/logo.png" />
-<meta name="twitter:image" content="https://react-router.vercel.app/logo.png" />
-<meta property="og:url" content="https://react-router.vercel.app" />
+        <meta property="og:image" content="https://react-router-snowy-seven.vercel.app/logo.png" />
+<meta property="og:url" content="https://react-router-snowy-seven.vercel.app" />
+<meta name="twitter:image" content="https://react-router-snowy-seven.vercel.app/logo.png" />
+
 
         
         <meta property="og:type" content="website" />
